@@ -1,3 +1,3 @@
-# faq
+# FAQ
 
-it's web page of faq
+<!--it's web page of faq-->
