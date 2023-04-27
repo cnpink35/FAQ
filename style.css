@@ -4,9 +4,10 @@ created by daeun yoo on 2023.04.27
 */
 
 .faqList {
-  width: 50%;
+  /*width: 50%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+  text-align: center;
 }
 
 .h1 {
