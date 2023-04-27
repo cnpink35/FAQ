@@ -15,7 +15,9 @@ h1 {
 }
 
 .test{
-  white-space: nowrap;
+  /*white-space: nowrap;*/
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 ul {
@@ -24,6 +26,7 @@ ul {
 }
 
 .qLine {
+  display: flex;
   flex-wrap: nowrap;
   border-bottom: 1px solid gray;
 }
