@@ -22,7 +22,12 @@ ul {
   white-space: nowrap;
 }
 
-.qMark {
+img {
+  width: 10px;
+  height: 10px:
+}
+
+/*.qMark {
   width: 10px;
   height: 10px:
 }
@@ -30,7 +35,7 @@ ul {
 .click {
   width: 10px;
   height: 10px:
-}
+}*/
   
 /*.list {
   text-align: center;
