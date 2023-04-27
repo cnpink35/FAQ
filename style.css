@@ -24,7 +24,7 @@ ul {
 }
 
 .qLine {
-  white-space: nowrap;
+  flex-wrap: nowrap;
   border-bottom: 1px solid gray;
 }
 
