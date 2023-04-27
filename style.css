@@ -10,16 +10,18 @@ created by daeun yoo on 2023.04.27
   text-align: center;
 }
 
-.h1 {
- border-bottom: 2px solid black;
+h1 {
+ border-bottom: 3px solid black;
 }
 
 ul {
   list-style: none;
+  border-top: 3px solid blue;
 }
 
 .qLine {
   white-space: nowrap;
+  border-bottom: 1px solid gray;
 }
 
 p {
