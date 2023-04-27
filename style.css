@@ -14,12 +14,6 @@ h1 {
  border-bottom: 3px solid black;
 }
 
-.test{
-  /*white-space: nowrap;*/
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 ul {
   list-style: none;
   border-top: 3px solid blue;
@@ -31,9 +25,9 @@ ul {
   border-bottom: 1px solid gray;
 }
 
-.qContent {
+/*.qContent {
  white-space: nowrap;
-} 
+} */
 
 img {
   width: 30px;
@@ -43,12 +37,11 @@ img {
 /*.qMark {
   width: 10px;
   height: 10px:
-}
+}*/
 
 .click {
-  width: 10px;
-  height: 10px:
-}*/
+  float: right;
+}
   
 /*.list {
   text-align: center;
