@@ -21,6 +21,16 @@ ul {
 .qLine {
   white-space: nowrap;
 }
+
+.qMark {
+  width: 10px;
+  height: 10px:
+}
+
+.click {
+  width: 10px;
+  height: 10px:
+}
   
 /*.list {
   text-align: center;
