@@ -1,5 +1,7 @@
-h1{
+header {
   position: relative;
   width: 50%;
   border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
