@@ -20,8 +20,8 @@ ul {
 }
 
 .qLine {
-  /*white-space: pre;*/
-  display: flex;
+  /*white-space: pre;
+  display: flex;*/
   border-bottom: 1px solid gray;
 }
 
@@ -31,17 +31,20 @@ img {
 }
 
 .qMark {
-  flex-wrap: nowrap;
+  white-space: pre;
+  /*flex-wrap: nowrap;*/
 }
 
 .qCont {
- flex-wrap: nowrap;
+ white-space: pre;
+  /*flex-wrap: nowrap;*/
 } 
 
 .click {
   /*float: right;
-  text-align: right;*/
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;*/
+  white-space: pre;
+  text-align: right;
 }
   
 .answer {
