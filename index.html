@@ -27,34 +27,20 @@ created by daeun yoo on 2023.04.27
   );
       });
 	    
-     /* $(function(){
-	var accoNum = 1;
+     $(function(){
 	jQuery("#list>li").each(function(q){
 		jQuery(this).find(".qLine").click(function(){
-		
-				if(q != accoNum) {
-					jQuery("#accoDiv>li").eq(accoNum).removeClass("on");
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").next().stop(true, true).slideUp(300);
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src").replace("_on.gif", ".gif"));
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src").replace("_on.gif", ".gif"));
-					
-					accoNum = q;
-					
-					jQuery(this).parent().addClass("on");
-					jQuery(this).next().stop(true, true).slideDown(300);
-					jQuery(this).find(".qNum").find("img").attr("src", jQuery(this).find(".qNum").find("img").attr("src").replace(".gif", "_on.gif"));
-					jQuery(this).find(".qBtn").find("img").attr("src", jQuery(this).find(".qBtn").find("img").attr("src").replace(".gif", "_on.gif"));
-				} else { //같은 거 눌러서 다 접혔을때
-					jQuery("#accoDiv>li").eq(accoNum).removeClass("on");
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").next().stop(true, true).slideUp(300);
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src").replace("_on.gif", ".gif"));
-					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src").replace("_on.gif", ".gif"));
-					accoNum = -1;
+            if (q.nextElementSibling.style.display != 'none') {
+		jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
+              jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("up_arrow.jpg", "down_arrow.png"));
+				} else {
+					jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
+              jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("down_arrow.png", "up_arrow.jpg"));
 				}
-			//}
+			
 		})
 	})
-})*/
+})
   </script>
   </head>
   <body>
