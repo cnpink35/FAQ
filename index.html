@@ -7,7 +7,7 @@ created by daeun yoo on 2023.04.27
   <head>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="viewCont.js"></script>
+    <!--<script src="viewCont.js"></script>-->
     <script src="getBold.js"></script>
     
     <title>
@@ -52,4 +52,16 @@ created by daeun yoo on 2023.04.27
       1
     </div>
   </body>
+  <script>
+  function view() {
+  var answer = document.getElementById('answer');
+  //var status = answer.style.display;
+  
+  if(answer.style.display != 'none'){
+    answer.style.display = 'none';
+  } else {
+    answer.style.display = 'block';
+  }
+}
+  </script>
 </html>
