@@ -5,7 +5,7 @@ created by daeun yoo on 2023.04.28
 
 //function getBold(){
   //$(document).ready(function){
-  $("#qCont").hover{
+  $(".qCont").hover{
     function(){
       $(this).css("font-weight", "bold");
       $(this).css("cursor", "pointer");
