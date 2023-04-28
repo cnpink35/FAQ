@@ -31,19 +31,19 @@ img {
 }
 
 .qMark {
-  white-space: pre;
+  white-space: nowrap;
   /*flex-wrap: nowrap;*/
 }
 
 .qCont {
- white-space: pre;
+ white-space: nowrap;
   /*flex-wrap: nowrap;*/
 } 
 
 .click {
   /*float: right;
   flex-direction: row-reverse;*/
-  white-space: pre;
+  white-space: nowrap;
   text-align: right;
 }
   
