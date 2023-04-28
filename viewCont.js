@@ -5,11 +5,11 @@ created by daeun yoo on 2023.04.27
 
 function view() {
   var answer = document.getElementById('answer');
-  var status = answer.style.display;
+  //var status = answer.style.display;
   
-  if(status !== 'none'){
-    status = 'none';
+  if(answer.style.display !== 'none'){
+    answer.style.display = 'none';
   } else {
-    status = 'block';
+    answer.style.display = 'block';
   }
 }
