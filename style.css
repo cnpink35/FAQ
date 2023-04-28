@@ -45,7 +45,7 @@ img {
 }
   
 .answer {
-  display: none;
+  /*display: none;*/
   border-bottom: 1px solid gray;
 }
 
