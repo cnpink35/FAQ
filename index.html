@@ -13,7 +13,8 @@ created by daeun yoo on 2023.04.27
     <title>
       FAQ | 유다은
     </title>
-    <script language="javaScript">
+    <script type="text/javascript">
+      $(document).ready(function(){
       $("#qCont").hover{
     function(){
       $(this).css("font-weight", "bold");
@@ -25,6 +26,7 @@ created by daeun yoo on 2023.04.27
       $(this).css("color", "black");
     }
   };
+      });
     
   function view(){
   var answer = document.getElementById("answer");  
