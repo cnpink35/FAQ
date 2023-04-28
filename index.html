@@ -8,12 +8,11 @@ created by daeun yoo on 2023.04.27
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="viewCont.js"></script>
-    <script src="getBold.js"></script>
     
     <title>
       FAQ | 유다은
     </title>
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
       $(document).ready(function(){
       $(".qCont").hover(
     function(){
@@ -28,14 +27,42 @@ created by daeun yoo on 2023.04.27
   );
       });
     
-  </script>-->
+      $(function(){
+	var accoNum = 1;
+	jQuery("#list>li").each(function(q){
+		jQuery(this).find(".pBox").click(function(){
+		
+				if(q != accoNum) {
+					jQuery("#accoDiv>li").eq(accoNum).removeClass("on");
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").next().stop(true, true).slideUp(300);
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src").replace("_on.gif", ".gif"));
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src").replace("_on.gif", ".gif"));
+					
+					accoNum = q;
+					
+					jQuery(this).parent().addClass("on");
+					jQuery(this).next().stop(true, true).slideDown(300);
+					jQuery(this).find(".qNum").find("img").attr("src", jQuery(this).find(".qNum").find("img").attr("src").replace(".gif", "_on.gif"));
+					jQuery(this).find(".qBtn").find("img").attr("src", jQuery(this).find(".qBtn").find("img").attr("src").replace(".gif", "_on.gif"));
+				} else { //같은 거 눌러서 다 접혔을때
+					jQuery("#accoDiv>li").eq(accoNum).removeClass("on");
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").next().stop(true, true).slideUp(300);
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qNum").find("img").attr("src").replace("_on.gif", ".gif"));
+					jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src", jQuery("#accoDiv>li").eq(accoNum).find(".pBox").find(".qBtn").find("img").attr("src").replace("_on.gif", ".gif"));
+					accoNum = -1;
+				}
+			//}
+		})
+	})
+})
+  </script>
   </head>
   <body>
     
     <div class="faqList">
     <h1>FAQ</h1>
       
-      <ul>
+      <ul class="list">
       <li>
         <div class="qLine" onclick="view(this)">
           <p><img src="q_mark.png"></p>
