@@ -26,15 +26,15 @@ function view(element) {
             var content = element.nextElementSibling;
             if (content.style.display != 'none') {      
                 content.style.display = 'none';
-              jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
+              /*jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
               jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("up_arrow.jpg", "down_arrow.png"));
-              /*document.getElementsByClassName("qMark").src="q_mark.png";
+              document.getElementsByClassName("qMark").src="q_mark.png";
               document.getElementsByClassName("click").src="down_arrow.png";*/
             } else {
                 content.style.display = 'block';
-              jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
+              /*jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
               jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("down_arrow.png", "up_arrow.jpg"));
-              /*document.getElementsByClassName("qMark").src="q_mark_op.png";
+              document.getElementsByClassName("qMark").src="q_mark_op.png";
               document.getElementsByClassName("click").src="up_arrow.jpg";*/
             }
         }
