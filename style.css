@@ -25,26 +25,22 @@ ul {
   border-bottom: 1px solid gray;
 }
 
-/*.qContent {
- white-space: nowrap;
-} */
-
 img {
   width: 30px;
   height: 30px:
 }
 
-/*.qMark {
-  width: 10px;
-  height: 10px:
-}*/
-
 .click {
   /*float: right;*/
   align: right;
 }
-  
-/*.list {
+
+.page {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
   text-align: center;
+  color: white;
+  line-height: 30px;
 }
-*/
+  
