@@ -8,7 +8,7 @@ created by daeun yoo on 2023.04.27
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!--<script src="viewCont.js"></script>-->
-    <script src="getBold.js"></script>
+    <!--<script src="getBold.js"></script>-->
     
     <title>
       FAQ | 유다은
@@ -51,7 +51,19 @@ created by daeun yoo on 2023.04.27
       1
     </div>
   </body>
-  <script>
+  <script language="javaScript">
+      $("#qCont").hover{
+    function(){
+      $(this).css("font-weight", "bold");
+      $(this).css("cursor", "pointer");
+      $(this).css("color", "black");
+    },
+    function(){
+      $(this).css("font-weight", "normal");
+      $(this).css("color", "black");
+    }
+  };
+    
   function view(class){
   var answer = document.getElementById(class);  
   if(answer.style.display == 'block'){
