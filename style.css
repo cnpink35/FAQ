@@ -21,8 +21,8 @@ ul {
 
 .qLine {
   /*white-space: pre;*/
-  display: inline-flex;
   border-bottom: 1px solid gray;
+    display: flex;
 }
 
 img {
@@ -43,8 +43,9 @@ img {
 .click {
   /*float: right;
   flex-direction: row-reverse;*/
-  white-space: nowrap;
-  text-align: right;
+  /*white-space: nowrap;
+  text-align: right;*/
+  margin-left: auto;
 }
   
 .answer {
