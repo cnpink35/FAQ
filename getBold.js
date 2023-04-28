@@ -3,7 +3,8 @@ make letters bold if mouse hover
 created by daeun yoo on 2023.04.28
 */
 
-function getBold(){
+//function getBold(){
+  $(document).ready(function){
   $("#qCont").hover{
     function(){
       $(this).css("font-weight", "bold");
@@ -15,4 +16,5 @@ function getBold(){
       $(this).css("color", "black");
     }
   }
-}
+  }
+//}
