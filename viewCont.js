@@ -7,7 +7,7 @@ function view() {
   var answer = document.getElementById('answer');
   //var status = answer.style.display;
   
-  if(answer.style.display !== 'none'){
+  if(answer.style.display != 'none'){
     answer.style.display = 'none';
   } else {
     answer.style.display = 'block';
