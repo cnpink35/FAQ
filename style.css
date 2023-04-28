@@ -44,3 +44,6 @@ img {
   line-height: 30px;
 }
   
+.answer {
+  display: none;
+}
