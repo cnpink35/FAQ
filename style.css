@@ -20,8 +20,8 @@ ul {
 }
 
 .qLine {
-  /*white-space: pre;
-  display: flex;*/
+  /*white-space: pre;*/
+  display: inline-flex;
   border-bottom: 1px solid gray;
 }
 
