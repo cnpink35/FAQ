@@ -22,7 +22,7 @@ created by daeun yoo on 2023.04.27
       <ul>
       <li>
          
-        <div class="qLine" onclick="view()">
+        <div class="qLine" onclick="view('answer')">
           <p><img src="q_mark.png"></p>
           <p class="qCont">&emsp;one</p>
           <p class="click"><img src="down_arrow.png"></p>
@@ -33,7 +33,7 @@ created by daeun yoo on 2023.04.27
         </div>
         </li>
       <li>
-        <a href="javascript:view();">
+        <a href="javascript:view('answer');">
         <div class="qLine">
         <p> <img src="q_mark.png"></p>
         <p class="qCont">&emsp;two</p>
@@ -52,8 +52,8 @@ created by daeun yoo on 2023.04.27
     </div>
   </body>
   <script>
-  function view() {
-  var answer = document.getElementById('answer');  
+  function view(class){
+  var answer = document.getElementById(class);  
   if(answer.style.display == 'block'){
     answer.style.display = 'none';
   } else {
