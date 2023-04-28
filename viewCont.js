@@ -26,7 +26,11 @@ function view(element) {
             var content = element.nextElementSibling;
             if (content.style.display != 'none') {      
                 content.style.display = 'none';
+              document.getElementByClass("qMark").src="q_mark.png";
+              document.getElementByClass("click").src="down_arrow.png";
             } else {
                 content.style.display = 'block';
+              document.getElementByClass("qMark").src="q_mark_op.png";
+              document.getElementByClass("click").src="up_arrow.jpg";
             }
         }
