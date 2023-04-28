@@ -26,11 +26,11 @@ function view(element) {
             var content = element.nextElementSibling;
             if (content.style.display != 'none') {      
                 content.style.display = 'none';
-              document.getElementById("qMark").src="q_mark.png";
-              document.getElementById("click").src="down_arrow.png";
+              /*document.getElementById("qMark").src="q_mark.png";
+              document.getElementById("click").src="down_arrow.png";*/
             } else {
                 content.style.display = 'block';
-              document.getElementById("qMark").src="q_mark_op.png";
-              document.getElementById("click").src="up_arrow.jpg";
+              /*document.getElementById("qMark").src="q_mark_op.png";
+              document.getElementById("click").src="up_arrow.jpg";*/
             }
         }
