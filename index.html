@@ -13,6 +13,28 @@ created by daeun yoo on 2023.04.27
     <title>
       FAQ | 유다은
     </title>
+    <script language="javaScript">
+      $("#qCont").hover{
+    function(){
+      $(this).css("font-weight", "bold");
+      $(this).css("cursor", "pointer");
+      $(this).css("color", "black");
+    },
+    function(){
+      $(this).css("font-weight", "normal");
+      $(this).css("color", "black");
+    }
+  };
+    
+  function view(){
+  var answer = document.getElementById("answer");  
+  if(answer.style.display == 'none'){
+    answer.style.display = 'block';
+  } else {
+    answer.style.display = 'none';
+  }
+}
+  </script>
   </head>
   <body>
     
@@ -24,7 +46,7 @@ created by daeun yoo on 2023.04.27
          
         <div class="qLine" onclick="view('answer')">
           <p><img src="q_mark.png"></p>
-          <p class="qCont">&emsp;one</p>
+          <a href="javascript:view();"><p class="qCont">&emsp;one</p></a>
           <p class="click"><img src="down_arrow.png"></p>
         
         </div>
@@ -33,7 +55,7 @@ created by daeun yoo on 2023.04.27
         </div>
         </li>
       <li>
-        <a href="javascript:view('answer');">
+        <a href="javascript:view();">
         <div class="qLine">
         <p> <img src="q_mark.png"></p>
         <p class="qCont">&emsp;two</p>
@@ -51,26 +73,5 @@ created by daeun yoo on 2023.04.27
       1
     </div>
   </body>
-  <script language="javaScript">
-      $("#qCont").hover{
-    function(){
-      $(this).css("font-weight", "bold");
-      $(this).css("cursor", "pointer");
-      $(this).css("color", "black");
-    },
-    function(){
-      $(this).css("font-weight", "normal");
-      $(this).css("color", "black");
-    }
-  };
-    
-  function view(class){
-  var answer = document.getElementById(class);  
-  if(answer.style.display == 'block'){
-    answer.style.display = 'none';
-  } else {
-    answer.style.display = 'block';
-  }
-}
-  </script>
+  
 </html>
