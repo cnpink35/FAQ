@@ -15,7 +15,7 @@ created by daeun yoo on 2023.04.27
     </title>
     <script type="text/javascript">
       $(document).ready(function(){
-      $("#qCont").hover(
+      $(".qCont").hover(
     function(){
       $(this).css("font-weight", "bold");
       $(this).css("cursor", "pointer");
@@ -28,14 +28,6 @@ created by daeun yoo on 2023.04.27
   );
       });
     
-  /*function view(){
-  var an = document.getElementById('answer');  
-  if(an.style.display == 'none'){
-    an.style.display = 'block';
-  } else {
-    an.style.display = 'none';
-  }
-}*/
   </script>
   </head>
   <body>
@@ -47,7 +39,7 @@ created by daeun yoo on 2023.04.27
       <li>
         <div class="qLine" onclick="view(this)">
           <p><img src="q_mark.png"></p>
-          <!--<a href="javascript:view();">--><p class="qCont">&emsp;one</p><!--</a>-->
+         <p class="qCont">&emsp;one</p>
           <p class="click"><img src="down_arrow.png"></p>
         
         </div>
