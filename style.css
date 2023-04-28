@@ -20,8 +20,9 @@ ul {
 }
 
 .qLine {
-  display: flex;
-  flex-wrap: nowrap;
+  white-space: pre;
+  /*display: flex;
+  flex-wrap: nowrap;*/
   border-bottom: 1px solid gray;
 }
 
