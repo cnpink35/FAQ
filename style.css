@@ -34,6 +34,10 @@ img {
   /*float: right;*/
   align: right;
 }
+  
+.answer {
+  display: none;
+}
 
 .page {
   width: 30px;
@@ -42,8 +46,6 @@ img {
   text-align: center;
   color: white;
   line-height: 30px;
-}
-  
-.answer {
-  display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
