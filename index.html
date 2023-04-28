@@ -7,7 +7,7 @@ created by daeun yoo on 2023.04.27
   <head>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <!--<script src="viewCont.js"></script>-->
+    <script src="viewCont.js"></script>
     <!--<script src="getBold.js"></script>-->
     
     <title>
@@ -28,35 +28,24 @@ created by daeun yoo on 2023.04.27
   );
       });
     
-  function view(){
+  /*function view(){
   var an = document.getElementById('answer');  
   if(an.style.display == 'none'){
     an.style.display = 'block';
   } else {
     an.style.display = 'none';
   }
-}
+}*/
   </script>
   </head>
   <body>
     
     <div class="faqList">
     <h1>FAQ</h1>
-      <a href="javascript:view();">
-          test1
-        </a>
-        <div class="answer" style="display:none">
-          test2
-        </div>
+      
       <ul>
       <li>
-         <a href="javascript:view();">
-          test
-        </a>
-        <div class="answer" style="display:none">
-          test2
-        </div>
-        <div class="qLine" onclick="view()">
+        <div class="qLine" onclick="view(this)">
           <p><img src="q_mark.png"></p>
           <!--<a href="javascript:view();">--><p class="qCont">&emsp;one</p><!--</a>-->
           <p class="click"><img src="down_arrow.png"></p>
@@ -67,13 +56,11 @@ created by daeun yoo on 2023.04.27
         </div>
         </li>
       <li>
-        <a href="javascript:view();">
         <div class="qLine">
         <p> <img src="q_mark.png"></p>
         <p class="qCont">&emsp;two</p>
         <p class="click"> <img src="down_arrow.png"></p>
         </div>
-        </a>
         <div class="answer" style="display:none">
           <p>이다.</p>
         </div>
