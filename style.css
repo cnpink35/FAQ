@@ -32,7 +32,7 @@ img {
 
 .click {
   /*float: right;*/
-  align: right;
+  text-align: right;
 }
   
 .answer {
