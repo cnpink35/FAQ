@@ -1,0 +1,3 @@
+function getBold(){
+  $("#qCont").hover{
+    
