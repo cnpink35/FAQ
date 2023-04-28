@@ -21,14 +21,13 @@ created by daeun yoo on 2023.04.27
       
       <ul>
       <li>
-          <a href="javascript:#;" onclick="view()">
-        <div class="qLine">
+         
+        <div class="qLine" onclick="view()">
           <p><img src="q_mark.png"></p>
           <p class="qCont">&emsp;one</p>
           <p class="click"><img src="down_arrow.png"></p>
         
         </div>
-        </a>
         <div class="answer" style="display:none">
           <p>일이다.</p>
         </div>
@@ -57,7 +56,7 @@ created by daeun yoo on 2023.04.27
   var answer = document.getElementById('answer');
   //var status = answer.style.display;
   
-  if(answer.style.display != 'none'){
+  if(answer.style.display == 'block'){
     answer.style.display = 'none';
   } else {
     answer.style.display = 'block';
