@@ -22,7 +22,6 @@ ul {
 .qLine {
   /*white-space: pre;*/
   display: flex;
-  flex-wrap: nowrap;
   border-bottom: 1px solid gray;
 }
 
@@ -31,6 +30,14 @@ img {
   height: 30px:
 }
 
+.qMark {
+  flex-wrap: nowrap;
+}
+
+.qCont {
+ flex-wrap: nowrap;
+} 
+
 .click {
   /*float: right;
   text-align: right;*/
@@ -38,7 +45,8 @@ img {
 }
   
 .answer {
-  /*display: none;*/
+  display: none;
+  border-bottom: 1px solid gray;
 }
 
 .page {
