@@ -9,8 +9,8 @@ function view(element) {
             
             if (before && document.getElementsByClassName("active")[0] != element) {  
                 before.nextElementSibling.style.display = 'none';
-                $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace('_op.png', '.png'));
-                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace('up_arrow.jpg', 'down_arrow.png'));
+                /*$('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace('_op.png', '.png'));
+                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace('up_arrow.jpg', 'down_arrow.png'));*/
                 before.classList.remove("active");
             }
             element.classList.toggle("active");      
@@ -18,15 +18,11 @@ function view(element) {
             var content = element.nextElementSibling;
             if (content.style.display != 'none') {      
                 content.style.display = 'none';
-                
-                $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace("_op.png", '.png'));
-                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace('up_arrow.jpg', 'down_arrow.png'));
-              
+                /*$('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace("_op.png", '.png'));
+                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace('up_arrow.jpg', 'down_arrow.png'));*/
             } else {
                 content.style.display = 'block';
-                
-                $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace(".png", '_op.png'));
-                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace("down_arrow.png", 'up_arrow.jpg'));
-                
+                /*$('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.qMark').find('img').attr('src').replace(".png", '_op.png'));
+                $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src', $('.list li').eq(indexNo).find('.qLine').find('.click').find('img').attr('src').replace("down_arrow.png", 'up_arrow.jpg'));*/
             }
         }
