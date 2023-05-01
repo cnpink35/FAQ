@@ -30,16 +30,16 @@ function view(element) {
             var content = element.nextElementSibling;
             if (content.style.display != 'none') {      
                 content.style.display = 'none';
-                $(this).find(".qMark").find("img").attr('src', $(this).find(".qMark").find("img").attr('src').replace('_op.png', '.png'));
-                $(this).find(".click").find("img").attr('src', $(this).find(".click").find("img").attr('src').replace('up_arrow.jpg', 'down_arrow.png'));
+                $(this).find(".qMark").find("img").attr('src', $(this).find(".qMark").find("img").attr("src").replace(/_op.png/g, '.png'));
+                $(this).find(".click").find("img").attr('src', $(this).find(".click").find("img").attr("src").replace(/up_arrow.jpg/g, 'down_arrow.png'));
               /*jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
               jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("up_arrow.jpg", "down_arrow.png"));
               document.getElementsByClassName("qMark").src="q_mark.png";
               document.getElementsByClassName("click").src="down_arrow.png";*/
             } else {
                 content.style.display = 'block';
-                $(this).find(".qMark").find("img").attr('src', $(this).find(".qMark").find("img").attr('src').replace('.png', '_op.png'));
-                $(this).find(".click").find("img").attr('src', $(this).find(".click").find("img").attr('src').replace('down_arrow.png', 'up_arrow.jpg'));
+                $(this).find(".qMark").find("img").attr('src', $(this).find(".qMark").find("img").attr("src").replace(/.png/g, '_op.png'));
+                $(this).find(".click").find("img").attr('src', $(this).find(".click").find("img").attr("src").replace(/down_arrow.png/g, 'up_arrow.jpg'));
               /*jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
               jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("down_arrow.png", "up_arrow.jpg"));
               document.getElementsByClassName("qMark").src="q_mark_op.png";
