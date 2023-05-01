@@ -26,70 +26,7 @@ created by daeun yoo on 2023.04.27
   	);
      });
 </script>
-      <!--$(function(){
 
-    	    var thumbnail = $('.list>li');
-    	    thumbnail.on({
-    	        click : function() {
-    	        	if ($(this).nextElementSibling.style.display != 'none') {
-    					$(this).find(".qMark").find("img").attr("src", $(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
-    	              	$(this).find(".click").find("img").attr("src", "down_arrow.png");
-    				} else {
-    					$(this).find(".qMark").find("img").attr("src", $(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
-    	              	$(this).find(".click").find("img").attr("src", "up_arrow.jpg");
-    				}
-    	        }
-    	    })
-
-    	});
-    	            <!--var smallImg = $(this).find('img').attr('src'),
-    	                    smallAlt = $(this).find('img').attr('alt'),
-    	                    bigImg   = $('#bigImg img');
-    	            bigImg.attr('src',smallImg);
-    	        }
-    	    })
-
-    	});-->
-  <!--    <script type="text/javascript">
-      
-    	$(function(){
-    		var accoNum = 1;//accoNum은 펼쳐져 있는 값
-    		jQuery(".list>li").each(function(q){
-    			jQuery(this).find(".qLine").click(function(){
-    			//2020.12.18 황선호 오류 수정 
-    			//	if(accoNum == 1) {
-    			//		jQuery(this).parent().addClass("on");
-    			//		jQuery(this).next().stop(true, true).slideDown(300);
-    			//		jQuery(this).find(".qNum").find("img").attr("src", jQuery(this).find(".qNum").find("img").attr("src").replace(".gif", "_on.gif"));
-    			//		jQuery(this).find(".qBtn").find("img").attr("src", jQuery(this).find(".qBtn").find("img").attr("src").replace(".gif", "_on.gif"));
-    			//		accoNum = q;
-    			//	} else {
-    					if(q != accoNum) {
-    						/*$(this).find(".qMark").find("img").attr("src", $(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
-        	              	$(this).find(".click").find("img").attr("src", "down_arrow.png");*/
-    						jQuery(".list>li").eq(accoNum).find(".qLine").find(".qMark").find("img").attr("src", jQuery(".list>li").eq(accoNum).find(".qList").find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
-    						jQuery(".list>li").eq(accoNum).find(".qLine").find(".click").find("img").attr("src", jQuery(".list>li").eq(accoNum).find(".qList").find(".click").find("img").attr("src").replace("up_arrow.jpg", "down_arrow.png"));
-    						
-    						accoNum = q;
-    						
-    						jQuery(this).parent().addClass("on");
-    						/*$(this).find(".qMark").find("img").attr("src", $(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
-        	              	$(this).find(".click").find("img").attr("src", "up_arrow.jpg");*/
-    						jQuery(this).find(".qMark").find("img").attr("src", jQuery(this).find(".qMark").find("img").attr("src").replace(".png", "_op.png"));
-    						jQuery(this).find(".click").find("img").attr("src", jQuery(this).find(".click").find("img").attr("src").replace("down_arrow.png", "up_arrow.jpg"));
-    					} else { //같은 거 눌러서 다 접혔을때
-    						jQuery(".list>li").eq(accoNum).removeClass("on");
-    						/*$(this).find(".qMark").find("img").attr("src", $(this).find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
-        	              	$(this).find(".click").find("img").attr("src", "down_arrow.png");*/
-        	              	jQuery(".list>li").eq(accoNum).find(".qLine").find(".qMark").find("img").attr("src", jQuery(".list>li").eq(accoNum).find(".qList").find(".qMark").find("img").attr("src").replace("_op.png", ".png"));
-    						jQuery(".list>li").eq(accoNum).find(".qLine").find(".click").find("img").attr("src", jQuery(".list>li").eq(accoNum).find(".qList").find(".click").find("img").attr("src").replace("up_arrow.jpg", "down_arrow.png"));
-    						accoNum = -1;
-    					}
-    				//}
-    			})
-    		})
-    	})
- </script>-->
 </head>
 <body>
 
@@ -99,9 +36,9 @@ created by daeun yoo on 2023.04.27
 		<ul class="list">
 			<li>
 				<div class="qLine" onclick="view(this)">
-					<p class="qMark"><img src="q_mark.png" alt="qImg"></p>
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
 					<p class="qCont">&emsp;one</p>
-					<p class="click"><img src="down_arrow.png" alt="arrowImg"></p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
 				</div>
 				<div class="answer" style="display: none">
 					<p>일이다.</p>
@@ -109,12 +46,72 @@ created by daeun yoo on 2023.04.27
 			</li>
 			<li>
 				<div class="qLine" onclick="view(this)">
-					<p class="qMark"><img src="q_mark.png" alt="qImg"></p>
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
 					<p class="qCont">&emsp;two</p>
-					<p class="click"><img src="down_arrow.png" alt="arrowImg"></p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
 				</div>
 				<div class="answer" style="display: none">
 					<p>이다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;three</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>삼이다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;four</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>사다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;five</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>오다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;six</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>육이다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;seven</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>칠이다.</p>
+				</div>
+			</li>
+			<li>
+				<div class="qLine" onclick="view(this)">
+					<p class="qMark"><img src="./q_mark.png" alt="qImg"></p>
+					<p class="qCont">&emsp;eight</p>
+					<p class="click"><img src="./down_arrow.png" alt="arrowImg"></p>
+				</div>
+				<div class="answer" style="display: none">
+					<p>팔이다.</p>
 				</div>
 			</li>
 		</ul>
